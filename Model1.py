@@ -57,17 +57,17 @@ print("y_test",y_test)
 
 
 from sklearn.metrics import accuracy_score
-print('ACCURACY is', accuracy_score(y_test,y_pred))
+print('ACCURACY is', accuracy_score(y_test,y_pred)*100 ,"%")
 
 
 
 
-##
-##testPrediction = NB.predict([[19,1,4,120,166,0,1,138,0,0,2]])
-##if testPrediction==1:
-##    print("The Patient Have Heart Disease,please consult the Doctor")
-##else:
-##    print("The Patient Normal")
+
+testPrediction = NB.predict([[2,1,0,1,0,0,2]])
+if testPrediction==1:
+   print("Survived ")
+else:
+   print("Not Survived")
 
 
 
